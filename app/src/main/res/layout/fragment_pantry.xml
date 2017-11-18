@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pantry"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.43" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:text="My Ingredient"
+        tools:ignore="ButtonStyle,HardcodedText,InefficientWeight" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:text="My Recipe" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="Saved Recipe"
+        tools:ignore="HardcodedText" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.17" />
+
+</LinearLayout>
