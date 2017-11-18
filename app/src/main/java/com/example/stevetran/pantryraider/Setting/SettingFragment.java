@@ -1,4 +1,4 @@
-package com.example.stevetran.pantryraider.Pantry;
+package com.example.stevetran.pantryraider.Setting;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,20 +12,24 @@ import android.widget.Button;
 import com.example.stevetran.pantryraider.R;
 
 /**
- * Created by Abel on 11/15/2017.
+ * Created by Abel on 11/17/2017.
  */
 
-public class PantryFragment extends Fragment implements View.OnClickListener{
-    Button savedRecipeButton;
+public class SettingFragment extends Fragment implements View.OnClickListener{
+    //this view
     View view;
+
+    //buttons
+    Button changePasswordButton;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_pantry, container, false);
+        view = inflater.inflate(R.layout.fragment_setting, container, false);
 
         //set up buttons
-        savedRecipeButton = (Button) view.findViewById(R.id.savedRecipeButton);
-        savedRecipeButton.setOnClickListener(this);
+        changePasswordButton = (Button) view.findViewById(R.id.changePasswordButton);
+        changePasswordButton.setOnClickListener(this);
 
         return view;
     }
@@ -33,11 +37,10 @@ public class PantryFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.savedRecipeButton:
-                Intent intent = new Intent(getActivity(), SavedRecipeActivity.class);
+            case R.id.changePasswordButton:
+                Intent intent = new Intent(getActivity(), ChangePasswordActivity.class);
                 startActivity(intent);
                 break;
         }
     }
 }
-

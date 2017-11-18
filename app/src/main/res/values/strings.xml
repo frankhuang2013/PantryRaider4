@@ -5,4 +5,7 @@
     <string name="text_favorites">Favorites</string>
     <string name="text_schedules">Schedules</string>
     <string name="text_music">Music</string>
+    <string-array name="saved_recipes" >
+        <item>chicken</item>
+    </string-array>
 </resources>

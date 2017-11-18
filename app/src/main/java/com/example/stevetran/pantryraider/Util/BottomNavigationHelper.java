@@ -1,5 +1,6 @@
 package com.example.stevetran.pantryraider.Util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -26,7 +27,7 @@ public class BottomNavigationHelper {
         bottomNavigationViewEx.enableShiftingMode(false);
         bottomNavigationViewEx.setTextVisibility(false);
     }
-    public static void enableNavigation(final Context context, BottomNavigationViewEx view){
+    public static void enableNavigation(final Context context, BottomNavigationViewEx view, final Activity callingActivity){
         view.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -35,21 +36,25 @@ public class BottomNavigationHelper {
                     case R.id.ic_home:
                         Intent intent1 = new Intent(context, HomeActivity.class);//ACTIVITY_NUM = 0
                         context.startActivity(intent1);
+                        callingActivity.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                         break;
 
                     case R.id.ic_search:
                         Intent intent2  = new Intent(context, SearchActivity.class);//ACTIVITY_NUM = 1
                         context.startActivity(intent2);
+                        callingActivity.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                         break;
 
                     case R.id.ic_pantry:
                         Intent intent3 = new Intent(context, PantryActivity.class);//ACTIVITY_NUM = 2
                         context.startActivity(intent3);
+                        callingActivity.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                         break;
 
                     case R.id.ic_setting:
                         Intent intent4 = new Intent(context, SettingActivity.class);//ACTIVITY_NUM = 3
                         context.startActivity(intent4);
+                        callingActivity.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                         break;
                 }
 

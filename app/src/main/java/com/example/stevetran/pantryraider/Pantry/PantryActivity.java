@@ -27,6 +27,7 @@ public class PantryActivity extends AppCompatActivity {
 
         setupBottomNavigationView();
         setupViewPager();
+
     }
     /**
      * start fragments
@@ -37,9 +38,6 @@ public class PantryActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.container); //from layout_center_viewpager
         viewPager.setAdapter(adapter);
 
-//        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-//        tabLayout.setupWithViewPager(viewPager);
-//
     }
 
     /**
@@ -48,9 +46,12 @@ public class PantryActivity extends AppCompatActivity {
     private void setupBottomNavigationView(){
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.bottomNavViewBar);
         BottomNavigationHelper.setupBottomNavigationView(bottomNavigationViewEx);
-        BottomNavigationHelper.enableNavigation(mContext, bottomNavigationViewEx);
+        BottomNavigationHelper.enableNavigation(mContext, bottomNavigationViewEx, this);
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
     }
+
+
+
 }

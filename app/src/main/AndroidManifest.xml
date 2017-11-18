@@ -21,6 +21,8 @@
         <activity android:name=".Pantry.PantryActivity"></activity>
         <activity android:name=".Search.SearchActivity"></activity>
         <activity android:name=".Setting.SettingActivity"></activity>
+        <activity android:name=".Setting.ChangePasswordActivity"></activity>
+        <activity android:name=".Pantry.SavedRecipeActivity"></activity>
     </application>
 
 </manifest>

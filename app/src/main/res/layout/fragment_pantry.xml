@@ -36,7 +36,7 @@
         android:text="My Recipe" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/savedRecipeButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.06"

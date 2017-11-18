@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.abel.pantryraider.HomeActivity">
+    tools:context="com.example.stevetran.pantryraider.Home.HomeActivity">
 
 
 
@@ -16,22 +16,11 @@
         android:layout_height="match_parent">
 
 
-        <!-- top toolbar -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/relLayout1">
-
-            <include layout="@layout/layout_top_tabs"/>
-
-        </RelativeLayout>
-
         <!-- Middle section (body) -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/relLayout2"
-            android:layout_below="@+id/relLayout1">
+            android:id="@+id/relLayout2">
 
             <include layout="@layout/layout_center_viewpager"/>
 
