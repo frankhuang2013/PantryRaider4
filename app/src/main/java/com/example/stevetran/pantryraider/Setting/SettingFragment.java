@@ -21,6 +21,7 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
 
     //buttons
     Button changePasswordButton;
+    Button setPreferencesButton;
 
     @Nullable
     @Override
@@ -30,6 +31,8 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
         //set up buttons
         changePasswordButton = (Button) view.findViewById(R.id.changePasswordButton);
         changePasswordButton.setOnClickListener(this);
+        setPreferencesButton = (Button) view.findViewById(R.id.setPreferencesButton);
+        setPreferencesButton.setOnClickListener(this);
 
         return view;
     }
@@ -38,8 +41,12 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.changePasswordButton:
-                Intent intent = new Intent(getActivity(), ChangePasswordActivity.class);
-                startActivity(intent);
+                Intent pwIntent = new Intent(getActivity(), ChangePasswordActivity.class);
+                startActivity(pwIntent);
+                break;
+            case R.id.setPreferencesButton:
+                Intent spIntent = new Intent(getActivity(), SetPreferencesActivity.class);
+                startActivity(spIntent);
                 break;
         }
     }
