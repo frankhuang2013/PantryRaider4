@@ -37,6 +37,7 @@ public class PantryActivity extends AppCompatActivity {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new PantryFragment()); //index 0
         adapter.addFragment(new SavedRecipeFragment()); //index 1
+        adapter.addFragment(new MyIngredientsFragment()); //index 2
         ViewPager viewPager = (ViewPager) findViewById(R.id.container); //from layout_center_viewpager
         viewPager.setAdapter(adapter);
 

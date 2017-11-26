@@ -1,5 +1,6 @@
 package com.example.stevetran.pantryraider.Pantry;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,7 @@ import com.example.stevetran.pantryraider.R;
 
 public class PantryFragment extends Fragment implements View.OnClickListener{
     Button savedRecipeButton;
+    Button myIngredientsButton;
     View view;
     final String TITLE = "Pantry";
     @Nullable
@@ -27,6 +29,9 @@ public class PantryFragment extends Fragment implements View.OnClickListener{
         savedRecipeButton = (Button) view.findViewById(R.id.savedRecipeButton);
         savedRecipeButton.setOnClickListener(this);
 
+        myIngredientsButton = (Button) view.findViewById(R.id.myIngredientsButton);
+        myIngredientsButton.setOnClickListener(this);
+
         return view;
     }
 
@@ -36,6 +41,14 @@ public class PantryFragment extends Fragment implements View.OnClickListener{
             case R.id.savedRecipeButton:
                 ViewPager viewPager = (ViewPager) getActivity().findViewById(R.id.container);
                 viewPager.setCurrentItem(1);
+                break;
+//            case R.id.myIngredientsButton:
+//                ViewPager viewPager2 = (ViewPager) getActivity().findViewById((R.id.container);
+//                viewPager2.setCurrentItem(2);
+//                break;
+            case R.id.myIngredientsButton:
+                Intent ingriIntent = new Intent(getActivity(), MyIngredientsActivity.class);
+                startActivity(ingriIntent);
                 break;
         }
     }
