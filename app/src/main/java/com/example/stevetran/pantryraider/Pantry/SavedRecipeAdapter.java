@@ -51,30 +51,30 @@ public class SavedRecipeAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         // Get view for row item
         View rowView = mInflater.inflate(R.layout.list_item_recipe, parent, false);
-// Get title element
+        // Get title element
         TextView titleTextView =
                 (TextView) rowView.findViewById(com.example.stevetran.pantryraider.R.id.recipe_list_title);
 
-// Get subtitle element
+        // Get subtitle element
         TextView subtitleTextView =
                 (TextView) rowView.findViewById(com.example.stevetran.pantryraider.R.id.recipe_list_subtitle);
 
-// Get detail element
+        // Get detail element
         TextView detailTextView =
                 (TextView) rowView.findViewById(com.example.stevetran.pantryraider.R.id.recipe_list_detail);
 
-// Get thumbnail element
+        // Get thumbnail element
         ImageView thumbnailImageView =
                 (ImageView) rowView.findViewById(com.example.stevetran.pantryraider.R.id.recipe_list_thumbnail);
-// 1
+
         SavedRecipe recipe = (SavedRecipe) getItem(position);
 
-// 2
+
         titleTextView.setText(recipe.title);
         subtitleTextView.setText(recipe.description);
         detailTextView.setText(recipe.label);
 
-// 3
+
         Picasso.with(mContext).load(recipe.imageUrl).placeholder(R.mipmap.ic_launcher).into(thumbnailImageView);
         return rowView;
     }
