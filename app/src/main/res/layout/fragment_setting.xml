@@ -49,6 +49,16 @@ android:weightSum="1">
         android:layout_marginTop="77dp"
         android:layout_below="@+id/setPreferencesButton"
         android:layout_alignStart="@+id/setPreferencesButton" />
+
+    <Button
+        android:text="Sign Out"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:id="@+id/signOutButton"
+        android:layout_marginTop="77dp"
+        android:layout_below="@+id/changeThemes"
+        android:layout_alignStart="@+id/changeThemes" />
 </RelativeLayout>
 
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.stevetran.pantryraider.Login.LoginActivity;
 import com.example.stevetran.pantryraider.R;
 
 /**
@@ -22,6 +23,7 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
     //buttons
     Button changePasswordButton;
     Button setPreferencesButton;
+    Button signOutButton;
 
     @Nullable
     @Override
@@ -33,7 +35,8 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
         changePasswordButton.setOnClickListener(this);
         setPreferencesButton = (Button) view.findViewById(R.id.setPreferencesButton);
         setPreferencesButton.setOnClickListener(this);
-
+        signOutButton = (Button) view.findViewById(R.id.signOutButton);
+        signOutButton.setOnClickListener(this);
         return view;
     }
 
@@ -47,6 +50,10 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
             case R.id.setPreferencesButton:
                 Intent spIntent = new Intent(getActivity(), SetPreferencesActivity.class);
                 startActivity(spIntent);
+                break;
+            case R.id.signOutButton:
+                Intent signOutIntent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(signOutIntent);
                 break;
         }
     }

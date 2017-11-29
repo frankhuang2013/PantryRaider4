@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/stevetran/.android/build-cache/95e8b767d78edbe88b7e7c8f3e34da4a5cde5224/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="/Users/stevetran/merging/PantryRaider/app/build/intermediates/pre-dexed/debug/classes_78fc58d0760ea86e0ebf08b82586e2cdc1889667.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevetran/.android/build-cache/68419afe3c5daa62485f52377819fb5c98754df2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/Users/stevetran/merging/PantryRaider/app/build/intermediates/pre-dexed/debug/classes_85d231b9d0d74aa73a2790cd6cd6e05d9aaee152.jar" />
+    </item>
+
+</items>

@@ -1,12 +1,15 @@
 package com.example.stevetran.pantryraider.Setting;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.example.stevetran.pantryraider.Login.LoginActivity;
 import com.example.stevetran.pantryraider.R;
 import com.example.stevetran.pantryraider.Util.BottomNavigationHelper;
 import com.example.stevetran.pantryraider.Util.SectionsPagerAdapter;
@@ -32,6 +35,9 @@ public class SettingActivity extends AppCompatActivity {
     /**
      * start fragments
      */
+
+
+
     private void setupViewPager(){
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new SettingFragment());
