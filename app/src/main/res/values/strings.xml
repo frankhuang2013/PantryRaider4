@@ -11,4 +11,7 @@
     <string name="action_sign_up_short">action_sign_up_short</string>
     <string name="action_sign_in">action_sign_in</string>
     <string name="action_sign_up">action_sign_up</string>
+    <string-array name="arrayRecipes">
+        <item></item>
+    </string-array>
 </resources>
