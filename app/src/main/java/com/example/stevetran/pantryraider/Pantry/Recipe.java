@@ -10,6 +10,7 @@ public class Recipe {
     public String imageUrl;
     public String instructionUrl;
     public String label;
+    public String rid;
 
     public Recipe(){}
 

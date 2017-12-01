@@ -47,8 +47,10 @@ public class PantryFragment extends Fragment implements View.OnClickListener{
 //                viewPager2.setCurrentItem(2);
 //                break;
             case R.id.myIngredientsButton:
-                Intent ingriIntent = new Intent(getActivity(), MyIngredientsActivity.class);
-                startActivity(ingriIntent);
+                //Intent ingriIntent = new Intent(getActivity(), MyIngredientsActivity.class);
+                //startActivity(ingriIntent);
+                ViewPager viewPager2 = (ViewPager) getActivity().findViewById(R.id.container);
+                viewPager2.setCurrentItem(2);
                 break;
         }
     }

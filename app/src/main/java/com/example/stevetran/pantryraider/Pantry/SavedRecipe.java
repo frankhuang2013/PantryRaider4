@@ -16,6 +16,7 @@ public class SavedRecipe {
     public String imageUrl;
     public String instructionUrl;
     public String label;
+    public String rid;
 
     public static ArrayList<SavedRecipe> getRecipesFromFile(String filename, Context context){
         final ArrayList<SavedRecipe> recipeList = new ArrayList<>();

@@ -14,4 +14,14 @@
     <string-array name="arrayRecipes">
         <item></item>
     </string-array>
+    <string-array name="ListIngredients">
+        <item>1st</item>
+        <item>2nd</item>
+    </string-array>
+    <string-array name="ing_search_results">
+        <item></item>
+    </string-array>
+    <string-array name="ing_add_results">
+        <item></item>
+    </string-array>
 </resources>

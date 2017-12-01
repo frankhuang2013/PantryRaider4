@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -29,11 +30,14 @@ public class SearchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("A", "oncreate1");
         setContentView(R.layout.activity_search);
         //set up the bottom navigation view
         setupBottomNavigationView();
+
         //set up view pager for the fragments
         setupViewPager();
+        Log.d("A", "oncreate2");
     }
     /**
      * start fragments

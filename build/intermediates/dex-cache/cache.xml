@@ -12,21 +12,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/rongfalu/AndroidStudioProjects/PantryRaider/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a435711673ae179ac84f764970a479c636574c84">
+        <dex dex="/Users/rongfalu/AndroidStudioProjects/PantryRaider/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_317df8f69827a20eb35852c3613c664d1846491a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/rongfalu/.android/build-cache/84c65be5f637bc1741fae27c31632bab003da790/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
         <dex dex="/Users/rongfalu/AndroidStudioProjects/PantryRaider/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_52867acc810fdf2e423c60d869bf84ba5ee6e843/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/rongfalu/AndroidStudioProjects/PantryRaider/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="144a488fe9669e9696a2f5d1db2595469ad3a03d">
-        <dex dex="/Users/rongfalu/AndroidStudioProjects/PantryRaider/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_317df8f69827a20eb35852c3613c664d1846491a/classes.dex" />
     </item>
     <item
         is-multidex="true"
