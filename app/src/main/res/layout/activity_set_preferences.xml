@@ -30,38 +30,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/lacVeg" />
+            android:id="@+id/lactovegetarian"
+            android:tag="lactovegeratian"/>
         <CheckBox
             android:text="Vegetarian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/veg"
+            android:id="@+id/vegetarian"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:checked="true" />
+            android:tag="vegetarian"/>
         <CheckBox
             android:text="Ovo vegetarian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/ovoVeg" />
-        <CheckBox
-            android:text="Paleo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/paleo" />
+            android:id="@+id/ovovegetarian"
+            android:tag="ovovegetarian"/>
+
         <CheckBox
             android:text="Pescetarian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/pesc" />
+            android:id="@+id/pesc"
+            android:tag="pescetarian"/>
+
         <CheckBox
             android:text="Vegan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/vegan" />
+            android:id="@+id/vegan"
+            android:tag="vegan"/>
+
     </GridLayout>
 
     <TextView
@@ -88,57 +89,72 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/diary" />
+            android:id="@+id/dairy"
+            android:tag="dairy"/>
+
         <CheckBox
             android:text="Egg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/egg" />
+            android:id="@+id/egg"
+            android:tag="egg"/>
+
         <CheckBox
-            android:text="Gluton"
+            android:text="Gluten"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/gluton" />
+            android:id="@+id/gluten"
+            android:tag="gluten"/>
+
         <CheckBox
             android:text="Peanut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
             android:id="@+id/peanut"
-            android:checked="true" />
+            android:tag="peanut"/>
+
         <CheckBox
             android:text="Seafood"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/seafood" />
+            android:id="@+id/seafood"
+            android:tag="seafood"/>
+
         <CheckBox
             android:text="Sesame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/sesame" />
+            android:id="@+id/sesame"
+            android:tag="sesame"/>
+
         <CheckBox
             android:text="Soy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/soy" />
+            android:id="@+id/soy"
+            android:tag="soy"/>
+
         <CheckBox
             android:text="Wheat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
-            android:id="@+id/wheat" />
+            android:id="@+id/wheat"
+            android:tag="wheat"/>
+
         <CheckBox
             android:text="Tree Nut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@android:color/holo_orange_dark"
             android:id="@+id/treeNut"
-            android:checked="true" />
+            android:tag="treenut"/>
 
     </GridLayout>
 
@@ -151,11 +167,12 @@
             android:text="Save Preferences"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button5"
+            android:id="@+id/savePrefButton"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:layout_marginTop="39dp"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:onClick="updatePreferencesClicked" />
     </RelativeLayout>
 
 

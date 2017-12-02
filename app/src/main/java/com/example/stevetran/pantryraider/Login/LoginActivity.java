@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.stevetran.pantryraider.Home.HomeActivity;
 import com.example.stevetran.pantryraider.R;
+import com.example.stevetran.pantryraider.Util.SharedConstants;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -49,6 +50,8 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Authentication success.",
                                     Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
+                            SharedConstants.FIREBASE_USER_ID = user.getUid();
+                            //System.out.println("$$$$$$$$$$$$$$$$$$$: " + user.getUid());
                             startActivity(goToHome);
                             finish();
                         } else {
