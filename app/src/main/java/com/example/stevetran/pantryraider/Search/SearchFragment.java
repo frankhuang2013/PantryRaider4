@@ -18,23 +18,19 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.stevetran.pantryraider.Pantry.Recipe;
 import com.example.stevetran.pantryraider.Pantry.RecipeActivity;
-import com.example.stevetran.pantryraider.Pantry.SavedRecipe;
 import com.example.stevetran.pantryraider.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -88,7 +84,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.searchButton:
-                EditText query = (EditText) view.findViewById(R.id.editText2);
+                EditText query = (EditText) view.findViewById(R.id.CPoldpassword);
                 Log.d("A", "query = " + String.valueOf(query));
                 makeRequest(query.getText().toString());
 //                Intent pwIntent = new Intent(getActivity(), ChangePasswordActivity.class);
