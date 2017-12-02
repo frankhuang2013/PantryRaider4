@@ -119,7 +119,11 @@ public class SignUpActivity extends AppCompatActivity {
                 });
     }
 
-
+    public void alreadyMemberClick(View view) {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
 
     public void onStart() {
         super.onStart();
