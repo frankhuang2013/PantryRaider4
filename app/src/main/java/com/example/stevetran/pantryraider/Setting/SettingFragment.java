@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.example.stevetran.pantryraider.Login.LoginActivity;
 import com.example.stevetran.pantryraider.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * Created by Abel on 11/17/2017.
@@ -52,6 +53,9 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
                 startActivity(spIntent);
                 break;
             case R.id.signOutButton:
+                FirebaseAuth mAuth;
+                mAuth = FirebaseAuth.getInstance();
+                mAuth.signOut();
                 Intent signOutIntent = new Intent(getActivity(), LoginActivity.class);
                 startActivity(signOutIntent);
                 break;

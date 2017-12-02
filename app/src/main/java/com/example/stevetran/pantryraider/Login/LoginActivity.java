@@ -77,20 +77,13 @@ public class LoginActivity extends AppCompatActivity {
         Log.d(TAG, "setting up firebase auth");
 
         mAuth = FirebaseAuth.getInstance();
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    // User is signed in
-                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-                } else {
-                    // User is signed out
-                    Log.d(TAG, "onAuthStateChanged:signed_out");
-                }
-                // ...
-            }
-        };
+        mAuth.getCurrentUser();
+        if (mAuth.getCurrentUser() != null) {
+            Intent goToHome = new Intent(this, HomeActivity.class);
+            startActivity(goToHome);
+            Toast.makeText(LoginActivity.this, "Logged In As: " + mAuth.getCurrentUser().getEmail(),
+                    Toast.LENGTH_SHORT).show();
+        }
 
     }
 
